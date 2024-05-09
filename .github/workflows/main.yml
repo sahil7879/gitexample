@@ -7,3 +7,13 @@ jobs:                 #workflow define
     steps:                 # workflow steps 
     - name: step1
       run: echo "hello from step1, workflow step1"
+    - name: step2
+      run: echo " hello, i am sahil"
+    - run: echo " hello from step3
+    - name: step4 
+      run:
+        ls
+        pwd 
+        sudo cat /etc/os-release
+        echo "step4 execution done"
+        
