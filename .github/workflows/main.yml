@@ -1,5 +1,15 @@
 name: first_workflow  #name of the workflow
-on: push              #when it will automate
+on:                   #when it will automate
+  #push:              
+   # branches:
+    #  main
+     # dev
+  pull_request: 
+    branches: 
+      main
+  schedule: 
+    - cron: '*/10 * * * 4'
+  workflow_run:   
 
 jobs:                 #workflow define 
   job1: 
