@@ -9,7 +9,7 @@ on:                   #when it will automate
       main
   schedule: 
     - cron: '*/10 * * * 4'
-  workflow_run:   
+     
 
 jobs:                 #workflow define 
   job1: 
