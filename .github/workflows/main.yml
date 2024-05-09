@@ -6,4 +6,4 @@ jobs:                 #workflow define
     runs-on: ubuntu-latest #server where it will run
     steps:                 # workflow steps 
     - name: step1
-      run: echo"hello from step1, workflow step1"
+      run: echo "hello from step1, workflow step1"
