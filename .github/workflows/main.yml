@@ -11,9 +11,10 @@ jobs:                 #workflow define
       run: echo " hello, i am sahil"
     - run: echo " hello from step3"
     - name: step4 
-      run:
-        ls
-        pwd 
-        sudo cat /etc/os-release
-        echo "step4 execution done"
+      run: |
+          ls -l
+          pwd
+          sudo cat /etc/os-release
+          uname -a
+          echo "final step4 execution done"
         
