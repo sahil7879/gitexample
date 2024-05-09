@@ -7,8 +7,8 @@ on:                   #when it will automate
   pull_request: 
     branches: 
       main
-  schedule: 
-    - cron: '*/10 * * * 4'
+  #schedule: 
+   # - cron: '*/10 * * * 4'
      
 
 jobs:                 #workflow define 
