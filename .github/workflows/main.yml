@@ -9,6 +9,7 @@ on:                   #when it will automate
       main
   #schedule: 
    # - cron: '*/10 * * * 4'
+  workflow_dispatch:
      
 
 jobs:                 #workflow define 
