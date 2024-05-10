@@ -2,11 +2,11 @@ name: first_workflow  #name of the workflow
 on:                   #when it will automate
   push:              
     branches:
-      main
-      dev
+      - main
+      - dev
   pull_request: 
     branches: 
-      main
+      - main
   #schedule: 
    # - cron: '*/10 * * * 4'
   workflow_dispatch:
