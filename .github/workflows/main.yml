@@ -1,9 +1,9 @@
 name: first_workflow  #name of the workflow
 on:                   #when it will automate
-  #push:              
-   # branches:
-    #  main
-     # dev
+  push:              
+    branches:
+      main
+      dev
   pull_request: 
     branches: 
       main
