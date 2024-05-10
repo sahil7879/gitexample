@@ -27,4 +27,18 @@ jobs:                 #workflow define
           sudo cat /etc/os-release
           uname -a
           echo "final step4 execution done"
-        
+  job2: 
+    runs-on: sahil #server where it will run
+    steps:                 # workflow steps 
+    - name: step1
+      run: echo "hello from step1, workflow step1"
+    - name: step2
+      run: echo " hello, i am sahil"
+    - run: echo " hello from step3"
+    - name: step4 
+      run: |
+          ls -l
+          pwd
+          sudo cat /etc/os-release
+          uname -a
+          echo "final step4 execution done"
