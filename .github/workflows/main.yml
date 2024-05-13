@@ -26,7 +26,7 @@ jobs:                 #workflow define
       run: echo " hello, i am $name"
     - run: echo " hello from step3"
     - name: step4 
-      if: runner.os == 'windows'
+      if: runner.os == 'Windows'
       run: |
           ls -l
           pwd
@@ -34,7 +34,7 @@ jobs:                 #workflow define
           uname -a
           echo "final step4 execution done"
   job2: 
-    if: runner.os == 'windows'
+    if: runner.os == 'Windows'
     env: 
       work: test
     runs-on: ubuntu-latest #server where it will run
