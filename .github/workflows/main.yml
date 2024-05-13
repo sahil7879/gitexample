@@ -27,14 +27,14 @@ jobs:                 #workflow define
     - run: echo " hello from step3"
     - name: step4 
       run: |
-      if: runner.os == "windows"
+      if: runner.os == 'windows'
           ls -l
           pwd
           sudo cat /etc/os-release
           uname -a
           echo "final step4 execution done"
   job2: 
-    if: runner.os == "windows"
+    if: runner.os == 'windows'
     env: 
       work: test
     runs-on: ubuntu-latest #server where it will run
