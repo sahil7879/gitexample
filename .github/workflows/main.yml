@@ -26,8 +26,8 @@ jobs:                 #workflow define
       run: echo " hello, i am $name"
     - run: echo " hello from step3"
     - name: step4 
-      run: |
       if: runner.os == 'windows'
+      run: |
           ls -l
           pwd
           sudo cat /etc/os-release
